@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+body > * {
+    display: flex;
+}
+
+/* HEADER */
+header {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* BANNER */
+.banner {
+    justify-content: center;
+}
+
+/* CALL TO ACTION */
+.call_to_action {
+    justify-content: center;
+    align-content: space-around;
+}
+h2 {
+    text-align: center;
+}
+
+/* DEV PATH */
+
+.dev-path {
+    justify-content: center;
+}
+
+/* MY SKILLS */
+.my-skills {
+    flex-direction: column;
+    align-items: center;
+}
+
+/* MY PORTFOLIO */
+.project-containers {
+    flex-direction: column;
+}
+.project-containers > div {
+    display: flex;
+    flex-direction: row;
+}
+.final-project {
+    display: flex;
+    flex-direction: column;
+}
+/* ABOUT ME */
+.about-me-container {
+    flex-direction: column;
+    align-items: center;
+}
+
+/* FIND ME HERE */
+.find-me-here {
+    justify-content: center;
+}
+/* CONTACT ME */
+.contact-me-section {
+    flex-direction: column;
+}
+form > div {
+    display: flex;
+    justify-content: center ;
+}
+input {
+    margin: 0 1.5em;
+}
+/* FOOTER */
+footer {
+    flex-direction: column;
+    align-items: center;
+}
