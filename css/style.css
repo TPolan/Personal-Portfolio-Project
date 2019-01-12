@@ -14,7 +14,10 @@ h1, h2 {
     color: #e9e8e4;
     background-color: #173701;
 }
-
+button {
+    background-color: #173701;
+    color: #e9e8e4;
+}
 /* HEADER */
 header {
     flex-direction: row-reverse;
@@ -73,9 +76,22 @@ h2 {
 
 /* DEV PATH */
 
-.dev-path {
+.dev-path-container {
+    background-color: #5b7632;
+    width: 50em;
+    display: flex;
+    justify-content: center;
+}
+.dev-path{
+    display: flex;
     justify-content: center;
     background-color: #5b7632;
+}
+.dev-path .dev-path-container div h3{
+    color: #e9e8e4;
+}
+.dev-path .dev-path-container div{
+    margin: 1em;
 }
 
 /* MY SKILLS */
@@ -96,6 +112,7 @@ h2 {
 .project-containers > div {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     
 }
 .project, .final-project {
@@ -116,15 +133,71 @@ h2 {
 .about-me-container {
     flex-direction: column;
     align-items: center;
+    background-color: #e9e8e4;
+    
 }
+.about-me-container h2 {
+    background-color: #e9e8e4;
+    color: #5b7632;
+}
+.button-text-image, .button-and-text{
+    display: flex;
+}
+.button-and-text {
+    flex-direction: column;
+    align-items: ;
+    height: auto;
+    flex-grow: 1;
+    max-width: 50%;
+}
+.button-text-image image {
+    flex-grow: 1;
+}
+.button-text-image {
+    justify-content: space-between;
+    /* margin: 0 10em; */
 
+}
 /* FIND ME HERE */
 .find-me-here {
+    align-items: center;
+    flex-direction: column;
+    background-color: #5b7632;
+}
+.find-me-here a {
+    display: flex;
     justify-content: center;
+    align-items: center;
+    background-color: #5b7632;
+    color: #e9e8e4;
+    height: 3.2em;
+    width: 7.5em;
+    margin: 0.05em;
+    
+ }
+.find-me-here h2 {
+     display: flex;
+     flex-direction: row;
+     background-color: #5b7632;
+ }
+.find-me-here-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 30%;
 }
 /* CONTACT ME */
 .contact-me-section {
     flex-direction: column;
+    background-color: #e9e8e4;
+}
+.contact-me-section > h2 {
+    background-color: #e9e8e4;
+    color: #5b7632;
+}
+.contact-me-section > input {
+    background-color: #173701;
+    color: #e9e8e4;
 }
 form > div {
     display: flex;
@@ -137,4 +210,12 @@ input {
 footer {
     flex-direction: column;
     align-items: center;
+    background-color: #5b7632;
+    color: #e9e8e4;
+}
+.icon-row_footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 30%;
 }
