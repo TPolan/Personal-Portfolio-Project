@@ -4,26 +4,63 @@
 body {
     display: flex;
     flex-direction: column;
+    
 }
 body > * {
     display: flex;
+}
+h1 {
+    font-size: 1.2em;
+    color: #e9e8e4;
+    background-color: #173701;
 }
 
 /* HEADER */
 header {
     flex-direction: row-reverse;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color:rgba(233, 232, 228, 1);
 }
 nav {
     display: flex;
     justify-content: flex-end;
 }
-
+ nav > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #173701;
+    height: 3.2em;
+    width: 7.5em;
+    margin: 0.05em;
+    color: #e9e8e4;
+ }
+ .porftolio_nav {
+     background-color: #5b7632;
+ }
 /* BANNER */
 .banner {
     justify-content: center;
+    background-image: url("../img/background.jpg"); 
+    background-color:rgba(233, 232, 228, 1); 
+    height: 500px; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
+.logo {
+    height: 8.5em;
+    width: auto;
+}
+.banner h1{
+    flex-basis: 18em;
+    padding: 0.2em;
+}
 /* CALL TO ACTION */
 .call_to_action {
     justify-content: center;
