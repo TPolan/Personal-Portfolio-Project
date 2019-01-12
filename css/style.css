@@ -9,7 +9,7 @@ body {
 body > * {
     display: flex;
 }
-h1 {
+h1, h2 {
     font-size: 1.2em;
     color: #e9e8e4;
     background-color: #173701;
@@ -44,7 +44,7 @@ nav {
 .banner {
     justify-content: center;
     background-image: url("../img/background.jpg"); 
-    background-color:rgba(233, 232, 228, 1); 
+    background-color: #e9e8e4; 
     height: 500px; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -62,9 +62,10 @@ nav {
     padding: 0.2em;
 }
 /* CALL TO ACTION */
-.call_to_action {
+.call-to-action {
     justify-content: center;
     align-content: space-around;
+    background-color: #173701;
 }
 h2 {
     text-align: center;
@@ -74,25 +75,42 @@ h2 {
 
 .dev-path {
     justify-content: center;
+    background-color: #5b7632;
 }
 
 /* MY SKILLS */
 .my-skills {
     flex-direction: column;
     align-items: center;
+    background-color: #e9e8e4;
 }
-
+.my-skills h2 {
+    color: #5b7632;
+    background-color: #e9e8e4;
+}
 /* MY PORTFOLIO */
 .project-containers {
     flex-direction: column;
+    background-color: #5b7632;
 }
 .project-containers > div {
     display: flex;
     flex-direction: row;
+    
 }
-.final-project {
+.project, .final-project {
+    background-color: #e9e8e4;
     display: flex;
     flex-direction: column;
+}
+.project-containers > h2 {
+    background-color: #5b7632;
+}
+.project-description, .project img, .final-project img {
+    background-color: #173701;
+    color: #e9e8e4;
+    width: 258px;
+    height: 101px;
 }
 /* ABOUT ME */
 .about-me-container {
