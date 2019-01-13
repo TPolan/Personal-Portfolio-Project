@@ -4,7 +4,7 @@
 body {
     display: flex;
     flex-direction: column;
-    
+    background-color:rgba(233, 232, 228, 1);
 }
 body > * {
     display: flex;
@@ -46,16 +46,15 @@ nav {
 /* BANNER */
 .banner {
     justify-content: center;
+    align-items: center;
     background-image: url("../img/background.jpg"); 
     background-color: #e9e8e4; 
-    height: 500px; 
-    background-position: center; 
+    background-position: bottom center; 
     background-repeat: no-repeat; 
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    background-size: contain;
+    /* position: relative; */
+    height: 350px;
+}   
 .logo {
     height: 8.5em;
     width: auto;
@@ -123,11 +122,18 @@ h2 {
 .project-containers > h2 {
     background-color: #5b7632;
 }
-.project-description, .project img, .final-project img {
+.project-description, .project-img, .final-project img {
     background-color: #173701;
     color: #e9e8e4;
-    width: 258px;
-    height: 101px;
+    width: 16.125em;
+    height: 6.313em;
+}
+.project {
+    padding: 1em;
+}
+.explore-button {
+    padding: 0;
+    
 }
 /* ABOUT ME */
 .about-me-container {
