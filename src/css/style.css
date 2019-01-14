@@ -51,9 +51,8 @@ nav {
     background-color: #e9e8e4; 
     background-position: bottom center; 
     background-repeat: no-repeat; 
-    background-size: contain;
-    /* position: relative; */
-    height: 350px;
+    background-size: cover;
+    height: 38.125em;
 }   
 .logo {
     height: 8.5em;
@@ -62,6 +61,8 @@ nav {
 .banner h1{
     flex-basis: 18em;
     padding: 0.2em;
+    position: relative;
+    bottom: 6em;
 }
 /* CALL TO ACTION */
 .call-to-action {
