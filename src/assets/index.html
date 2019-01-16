@@ -9,23 +9,25 @@
         <title>Personal Portfolio</title>
         <meta name="description" content="project image">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="css/main.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <header>
-            <nav>
-                <a href="#banner">Home</a>
-                <a href="#my-skills-section">Skills</a>
-                <a href="#portfolio-section" class="porftolio_nav">Portfolio</a>
-                <a href="#about-me-section">About me</a>
-                <a href="#contacts-section">Contacts</a>
-            </nav>
-            <img src="" alt="logo" class="logo">
-        </header>
+        <div class="header-logo-container">
+            <img src="img/Logo.gif" alt="logo" class="logo">
+            <header>
+                <nav>
+                    <a href="#banner">Home</a>
+                    <a href="#my-skills-section">Skills</a>
+                    <a href="#portfolio-section" class="porftolio_nav">Portfolio</a>
+                    <a href="#about-me-section">About me</a>
+                    <a href="#contacts-section">Contacts</a>
+                </nav>
+            </header>
+        </div>
         <!-- BANNER -->
         <div class="banner" id="banner">
             <h1>
@@ -101,7 +103,7 @@
         <!-- MY PORTFOLIO -->
         <div class="project-containers">
             <h2 class="protfolio" id="portfolio-section">My Portfolio</h2>
-            <div class="project-description_windows1">
+            <div class="project-description_windows">
                 <div class="project">
                     <img src="" alt="project-image">
                     <p class="project-description">
@@ -123,8 +125,6 @@
                             Tech stack:   HTML, CSS, Sass, Bootstrap   
                     </p>
                 </div>
-            </div>   
-            <div class="project-description_windows2">
                 <div class="project">
                     <img src="" alt="project-image">
                     <p class="project-description">
@@ -181,7 +181,7 @@
             </div>
         </div>
         <!-- CONTACT ME -->
-        <div class="contact-me-section">
+        <div class="contact-me-section">    
             <h2 class="contact-me_header" id="contacts-section">Contact me</h2>
             <form action="project image">
                     <div class="form-up">

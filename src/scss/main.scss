@@ -1,5 +1,6 @@
 
 @import 'colors.scss';
+
 // Imports end
 * {
     box-sizing: border-box;
@@ -11,8 +12,10 @@ body {
     body > * {
         display: flex;
 }
+}
 h1, h2 {
-    font-size: 1.2em;
+    font-size: 2.5em;
+    text-align: center;
     color: $offColor;
     background-color: $maincolor;
 }
@@ -24,23 +27,33 @@ button {
 header {
     flex-direction: row-reverse;
     justify-content: space-between;
-    position: sticky;
-    top: 0;
-    background-color:$offColor;
-}
-nav {
-    display: flex;
-    justify-content: flex-end;
-    a {
+    background-color:rgba(233, 232, 228, 0);
+    z-index: 1;
+    nav {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: $maincolor;
-        height: 3.2em;
-        width: 7.5em;
-        margin: 0.05em;
-        color: $offColor;
+        justify-content: flex-end;
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $maincolor;
+            height: 3.2em;
+            width: 7.5em;
+            margin: 0.05em;
+            color: $offColor;
+        }
+        nav, a {
+            opacity: 1;
+        }
     }
+}
+.logo {
+    margin: 0;
+}
+.header-logo-container {
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
 }
  .porftolio_nav {
      background-color: $secondaryColor;
@@ -49,33 +62,36 @@ nav {
 .banner {
     justify-content: center;
     align-items: center;
-    background-image: url("../img/background.jpg"); 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("/img/background.jpg"); 
     background-color: $offColor; 
     background-position: bottom center; 
     background-repeat: no-repeat; 
     background-size: cover;
     height: 38.125em;
+    display: flex;
     h1 {
         flex-basis: 18em;
         padding: 0.2em;
         position: relative;
         bottom: 6em;
+        font-size: 1.5em;
+        text-align: center;
     }
 }   
-.logo {
-    height: 8.5em;
-    width: auto;
-}
 /* CALL TO ACTION */
 .call-to-action {
     justify-content: center;
     align-content: space-around;
     background-color: $maincolor;
+    h2 {
+        text-align: center;
+        font-weight: 100;
+        font-size: 120%;
+        span {
+            font-weight: 500;
+        }
+    }
 }
-h2 {
-    text-align: center;
-}
-
 /* DEV PATH */
 
 .dev-path-container {
@@ -92,6 +108,7 @@ h2 {
         margin: 1em;
         h3 {
             color: $offColor;
+            font-size: 2em;
         }
     }
 }
@@ -117,23 +134,33 @@ h2 {
     }
     & > h2 {
         background-color: $secondaryColor;
+        text-align: center;
+
+    }
+    .project-description_windows {
+        display: flex;
+        flex-flow: row  wrap;
+        justify-content: center;
+        margin: 1%;
+            .project, .final-project {
+                background-color: $offColor;
+                display: flex;
+                flex-direction: column;
+                padding: 1em;
+                margin:  2%;
+                max-width: 28%;
+                img {
+                    background-color: $maincolor;
+                }
+            }
     }
 }
 
-.project, .final-project {
-    background-color: $offColor;
-    display: flex;
-    flex-direction: column;
-}
 
 .project-description, .project-img, .final-project img {
     background-color: $maincolor;
     color: $offColor;
-    width: 16.125em;
-    height: 6.313em;
-}
-.project {
-    padding: 1em;
+    
 }
 .explore-button {
     padding: 0;
@@ -149,25 +176,28 @@ h2 {
         color: $secondaryColor;
     }
 }
-
-.button-text-image, .button-and-text{
-    display: flex;
-}
-.button-and-text {
-    flex-direction: column;
-    align-items: ;
-    height: auto;
-    flex-grow: 1;
-    max-width: 50%;
-}
 .button-text-image {
-    justify-content: space-between;
+    display: flex;
+    justify-content: stretch;
     image {
         flex-grow: 1;
     }
+    .button-and-text {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        max-width: 50%;
+        margin: 0 auto;
+        button {
+            max-width: 20vw;
+            align-self: center;
+            padding: 0.7em;
+        }
+    } 
 }
 /* FIND ME HERE */
 .find-me-here {
+    display: flex;
     align-items: center;
     flex-direction: column;
     background-color: $secondaryColor;
@@ -197,7 +227,9 @@ h2 {
 }
 /* CONTACT ME */
 .contact-me-section {
+    display: flex;
     flex-direction: column;
+    align-items: center;
     background-color: $offColor;
     & > h2 {
         background-color: $offColor;
@@ -206,18 +238,20 @@ h2 {
     & > input {
         background-color: $maincolor;
         color: $offColor;
+        max-width: 20vw;
+        margin: 1em;
     }
 }
-
 form > div {
     display: flex;
     justify-content: center ;
 }
 input {
-    margin: 0 1.5em;
+    margin: 0.5em;
 }
 /* FOOTER */
 footer {
+    display: flex;
     flex-direction: column;
     align-items: center;
     background-color: $secondaryColor;
@@ -227,5 +261,5 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 30%
+    width: 30%;
 }
