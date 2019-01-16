@@ -121,6 +121,48 @@ header {
         color: $secondaryColor;
         background-color: $offColor;
     }
+    .skills-percentage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        .skill-bar {
+            border: solid $secondaryColor 0.1em;
+            background-color: $maincolor;
+            min-width: 80%;
+            height: 1.8em;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 2%;
+            .skill-label {
+                background-color: $secondaryColor;
+                margin: 0;
+                color: $offColor;
+                min-width: 15%;
+                font-size: 120%;
+            
+            }
+            .skill-percentage {
+                font-size: 120%;
+                background-color: $offColor;
+                margin: 0;
+                text-align: end;
+                padding-right: 0.2em;
+            }
+            .eighty {
+                min-width: 15%;
+            }
+            .seventy {
+                min-width: 20%;
+            }
+            .sixty {
+                min-width: 30%;
+            }
+            .fifty {
+                min-width: 40%;
+            }
+        }
+    }
 }
 /* MY PORTFOLIO */
 .project-containers {
@@ -151,6 +193,10 @@ header {
                 max-width: 28%;
                 img {
                     background-color: $maincolor;
+                    min-height: 7em;
+                }
+                .project-description {
+                    padding: 0.5em;
                 }
             }
     }
@@ -220,10 +266,20 @@ header {
 }
 
 .find-me-here-links {
+
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     width: 30%;
+    a { 
+        padding: 25%;
+        img {
+        // border-radius: 100%;
+        // background-color: $offColor;
+        height: 6.250em;
+        width: 6.250em;
+        }
+    }
 }
 /* CONTACT ME */
 .contact-me-section {
@@ -247,7 +303,13 @@ form > div {
     justify-content: center ;
 }
 input {
-    margin: 0.5em;
+    margin: 1em;
+    padding: 0.7em;
+    background-color: $secondaryColor;
+
+    ::placeholder {
+        color: $offColor;
+    }
 }
 /* FOOTER */
 footer {
