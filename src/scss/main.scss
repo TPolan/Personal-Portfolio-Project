@@ -221,25 +221,24 @@ header {
         background-color: $offColor;
         color: $secondaryColor;
     }
-}
-.button-text-image {
-    display: flex;
-    justify-content: stretch;
-    image {
-        flex-grow: 1;
-    }
-    .button-and-text {
+    .button-text-image {
         display: flex;
-        flex-direction: column;
-        height: auto;
-        max-width: 50%;
-        margin: 0 auto;
-        button {
-            max-width: 20vw;
-            align-self: center;
-            padding: 0.7em;
+        justify-content: space-around;
+        image {
+            min-width: 50%;
         }
-    } 
+        .button-and-text {
+            display: flex;
+            flex-direction: column;
+            height: auto;
+            max-width: 50%;
+            button {
+                max-width: 20vw;
+                align-self: center;
+                padding: 0.7em;
+            }
+        } 
+    }
 }
 /* FIND ME HERE */
 .find-me-here {
