@@ -13,6 +13,13 @@
         <link
             href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300"
             rel="stylesheet">
+        <link href="css/hover.css" rel="stylesheet" media="all">
+
+        <link rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -22,11 +29,13 @@
             <img src="img/Logo.gif" alt="logo" class="logo">
             <header>
                 <nav>
-                    <a href="#banner">Home</a>
-                    <a href="#my-skills-section">Skills</a>
-                    <a href="#portfolio-section" class="porftolio_nav">Portfolio</a>
-                    <a href="#about-me-section">About me</a>
-                    <a href="#contacts-section">Contacts</a>
+                    <a class='hvr-sweep-to-top' href="#banner">Home</a>
+                    <a class='hvr-sweep-to-top' href="#my-skills-section">Skills</a>
+                    <a class='hvr-sweep-to-top' href="#portfolio-section"
+                        class="porftolio_nav">Portfolio</a>
+                    <a class='hvr-sweep-to-top' href="#about-me-section">About
+                        me</a>
+                    <a class='hvr-sweep-to-top' href="#contacts-section">Contacts</a>
                 </nav>
             </header>
         </div>
@@ -34,7 +43,7 @@
         <div class="banner" id="banner">
             <h1>
                 Hello My Name is Tomas Polan <br>
-                I am your new Full-stack Web Developer
+                I am junior Full-stack Web Developer
             </h1>
         </div>
         <!-- CALL TO ACTION -->
@@ -76,98 +85,122 @@
         <div class="my-skills">
             <h2 class="skills" id="my-skills-section">My Skills</h2>
             <div class="skills-percentage">
-                <div class="skill-bar">
+                <div class="skill-bar" data-aos="flip-right" data-aos-duration="2000" data-aos-offset="150" data-aos-easing="ease-in-sine">
                     <p class="skill-label">HTML</p>
                     <p class="skill-percentage eighty">80%</p>
                 </div>
-                <div class="skill-bar">
+
+                <div class="skill-bar" data-aos="flip-right" data-aos-duration="2000" data-aos-offset="150" data-aos-easing="ease-in-sine">
                     <p class="skill-label">CSS, Sass</p>
                     <p class="skill-percentage eighty">80%</p>
                 </div>
-                <div class="skill-bar">
+
+                <div class="skill-bar" data-aos="flip-right" data-aos-duration="2000" data-aos-offset="150" data-aos-easing="ease-in-sine">
                     <p class="skill-label">JavaScript</p>
                     <p class="skill-percentage seventy">70%</p>
                 </div>
-                <div class="skill-bar">
+
+                <div class="skill-bar" data-aos="flip-right" data-aos-duration="2000" data-aos-offset="150" data-aos-easing="ease-in-sine">
                     <p class="skill-label">React</p>
                     <p class="skill-percentage sixty">60%</p>
-                </div class="skill-bar">
-                <div class="skill-bar">
+                </div>
+
+                <div class="skill-bar" data-aos="flip-right" data-aos-duration="2000" data-aos-offset="150" data-aos-easing="ease-in-sine">
                     <p class="skill-label">UX</p>
                     <p class="skill-percentage seventy">70%</p>
                 </div>
-                <div class="skill-bar">
+
+                <div class="skill-bar" data-aos="flip-right" data-aos-duration="2000" data-aos-offset="150" data-aos-easing="ease-in-sine">
                     <p class="skill-label">jQuery</p>
                     <p class="skill-percentage sixty">60%</p>
                 </div>
-                <div class="skill-bar">
+
+                <div class="skill-bar" data-aos="flip-right" data-aos-duration="2000" data-aos-offset="150" data-aos-easing="ease-in-sine">
                     <p class="skill-label">PHP</p>
                     <p class="skill-percentage sixty">60%</p>
                 </div>
-                <div class="skill-bar">
+
+                <div class="skill-bar" data-aos="flip-right" data-aos-duration="2000" data-aos-offset="150" data-aos-easing="ease-in-sine">
                     <p class="skill-label">Laravel</p>
                     <p class="skill-percentage fifty">50%</p>
                 </div>
             </div>
         </div>
         <!-- MY PORTFOLIO -->
-        <div class="project-containers">
-            <h2 class="protfolio" id="portfolio-section">My Portfolio</h2>
-            <div class="project-description_windows">
-                <div class="project">
-                    <img src="" alt="project-image">
-                    <p class="project-description">
-                        Website for a coffee shop. Student Project for the
-                        Coding Bootcamp Praha. Coded based on provided psd
-                        design.
-                        Tech stack: HTML, CSS, Sass, Bootstrap
-                    </p>
+        <div class="container-fluid d-flex portfolio">
+
+            <div class="row d-flex project-containers align-content-around justify-content-center">
+
+                <div class="card col-4">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Project #</h5>
+                        <p class="card-text">Some quick example text to build on
+                            the
+                            Project # and make up the bulk of the card's
+                            content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
                 </div>
-                <div class="project">
-                    <img src="" alt="project-image">
-                    <p class="project-description">
-                        Website for a coffee shop. Student Project for the
-                        Coding Bootcamp Praha. Coded based on provided psd
-                        design.
-                        Tech stack: HTML, CSS, Sass, Bootstrap
-                    </p>
+
+                <div class="card col-4">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Project #</h5>
+                        <p class="card-text">Some quick example text to build on
+                            the
+                            Project # and make up the bulk of the card's
+                            content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
                 </div>
-                <div class="project">
-                    <img src="" alt="project-image">
-                    <p class="project-description">
-                        Website for a coffee shop. Student Project for the
-                        Coding Bootcamp Praha. Coded based on provided psd
-                        design.
-                        Tech stack: HTML, CSS, Sass, Bootstrap
-                    </p>
+
+                <div class="card col-4">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Project #</h5>
+                        <p class="card-text">Some quick example text to build on
+                            the
+                            Project # and make up the bulk of the card's
+                            content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
                 </div>
-                <div class="project">
-                    <img src="" alt="project-image">
-                    <p class="project-description">
-                        Website for a coffee shop. Student Project for the
-                        Coding Bootcamp Praha. Coded based on provided psd
-                        design.
-                        Tech stack: HTML, CSS, Sass, Bootstrap
-                    </p>
+            
+                <div class="card col-4">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Project #</h5>
+                        <p class="card-text">Some quick example text to build on
+                            the
+                            Project # and make up the bulk of the card's
+                            content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
                 </div>
-                <div class="project">
-                    <img src="" alt="project-image">
-                    <p class="project-description">
-                        Website for a coffee shop. Student Project for the
-                        Coding Bootcamp Praha. Coded based on provided psd
-                        design.
-                        Tech stack: HTML, CSS, Sass, Bootstrap
-                    </p>
+
+                <div class="card col-4">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Project #</h5>
+                        <p class="card-text">Some quick example text to build on
+                            the
+                            Project # and make up the bulk of the card's
+                            content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
                 </div>
-                <div class="final-project">
-                    <img src="" alt="project-image">
-                    <p class="project-description">
-                        Website for a coffee shop. Student Project for the
-                        Coding Bootcamp Praha. Coded based on provided psd
-                        design.
-                        Tech stack: HTML, CSS, Sass, Bootstrap
-                    </p>
-                    <button class="explore-button">Explore</button>
+
+                <div class="card col-4">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Project #</h5>
+                        <p class="card-text">Some quick example text to build on
+                            the
+                            Project # and make up the bulk of the card's
+                            content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
                 </div>
             </div>
 
@@ -179,21 +212,20 @@
                 <img src="" alt="personal-photo">
                 <div class="button-and-text">
                     <p>
-                        My name is Tomáš Polan. I am a full-stack web developer
-                        and enjoy learning new trends. I am developing user
-                        interfaces in JavaScript and React and backend of my
-                        projects in PHP and Laravel.
-
-                        I am open to learning new technologies and enjoy working
-                        with people who are as passionate about all web-related
-                        as me.
-
-                        I have worked for clients all across the world but
-                        currently I am based in Prague, Czech Republic.
-
-                        I like cats, gaming, and snowboarding. If I do not
-                        develop, you can also meet me trekking in the mountains.
-                        Get in touch and let's do something great together.
+                        I'm currently studying full-stack web development in
+                        Europe's #1 Coding Bootcamps according to Digital Skills
+                        Award (HTML, CSS, PHP, Javascript, React, Laravel ). I
+                        reside in Prague and am available for hire from the
+                        beginning of April 2019, so feel free to contact me. I
+                        am passionate, precise and have detail-oriented mindset.
+                        Constantly driven to learn new skills, technologies and
+                        generaly improve myself in all ways possible. I used to
+                        work as administrative worker for a international
+                        corporate and after two years I could not see myself
+                        doing it for years to come. So i decided to switch
+                        carriers for something I will be truely passionate
+                        about. I found Web Development and Programming to be the
+                        perfect fit.
                     </p>
                     <button class="contact-me-button">Contact me</button>
                 </div>
@@ -203,9 +235,11 @@
         <div class="find-me-here">
             <h2 class="find-me-here">Find me here:</h2>
             <div class="find-me-here-links">
-                <a href="https://github.com/TPolan"><img src="img/github.svg"
+                <a href="https://github.com/TPolan"><img
+                        src="img/github.svg"
                         alt="github logo"></a>
-                <a href="https://www.linkedin.com/in/tom%C3%A1%C5%A1-polan/"><img
+                <a
+                    href="https://www.linkedin.com/in/tom%C3%A1%C5%A1-polan/"><img
                         src="img/linkedin.svg" alt="linked in logo"></a>
                 <a href="https://www.facebook.com/tomas.polan.1"><img
                         src="img/facebook.svg" alt="facebook logo"></a>
@@ -213,7 +247,8 @@
         </div>
         <!-- CONTACT ME -->
         <div class="contact-me-section">
-            <h2 class="contact-me_header" id="contacts-section">Contact me</h2>
+            <h2 class="contact-me_header" id="contacts-section">Contact
+                me</h2>
             <form action="project image">
                 <div class="form-up">
                     <input type="text" placeholder="First Name*">
@@ -226,8 +261,8 @@
 
             </form>
             <form class="text-button_form">
-                <textarea name="message" rows="10" cols="30">
-                    Lorem ipsum dolor sit amet consectetur 
+                <textarea name="message" rows="5" cols="55">
+                    Lorem ipsum dolor sit amet consectetur
                 </textarea>
                 <input type="submit" value="Send message"
                     class="send-my-message-button">
@@ -240,6 +275,16 @@
         </footer>
 
 
-        <script src="" async defer></script>
+        <script src="script/script.js"></script>
+        <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>

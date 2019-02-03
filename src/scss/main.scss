@@ -4,6 +4,7 @@
 // Imports end
 * {
     box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 body {
     display: flex;
@@ -16,7 +17,7 @@ body {
 h1, h2 {
     font-size: 2.5em;
     text-align: center;
-    color: $offColor;
+    color: $offColor !important;
     background-color: $maincolor;
 }
 button {
@@ -24,6 +25,7 @@ button {
     color: $offColor;
 }
 /* HEADER */
+
 header {
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -65,7 +67,7 @@ header {
 .banner {
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("/img/background.jpg"); 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.5)), url("/img/background.jpg"); 
     background-color: $offColor; 
     background-position: bottom center;
     background-attachment: fixed;
@@ -87,7 +89,6 @@ header {
     justify-content: center;
     align-content: space-around;
     background-color: $maincolor;
-    box-shadow: 0px -11px 97px 17px rgba(15,14,15,1);
 
     h2 {
         text-align: center;
@@ -171,53 +172,14 @@ header {
     }
 }
 /* MY PORTFOLIO */
-.project-containers {
-    flex-direction: column;
+.portfolio {
     background-color: $secondaryColor;
-    & > div {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        
-    }
-    & > h2 {
-        background-color: $secondaryColor;
-        text-align: center;
-
-    }
-    .project-description_windows {
-        display: flex;
-        flex-flow: row  wrap;
-        justify-content: center;
-        margin: 1%;
-            .project, .final-project {
-                background-color: $offColor;
-                display: flex;
-                flex-direction: column;
-                padding: 1em;
-                margin:  2%;
-                max-width: 28%;
-                img {
-                    background-color: $maincolor;
-                    min-height: 7em;
-                }
-                .project-description {
-                    padding: 0.5em;
-                }
-            }
-    }
+}
+.card {
+    margin: 0.5em;
 }
 
 
-.project-description, .project-img, .final-project img {
-    background-color: $maincolor;
-    color: $offColor;
-    
-}
-.explore-button {
-    padding: 0;
-    
-}
 /* ABOUT ME */
 .about-me-container {
     flex-direction: column;
@@ -308,19 +270,19 @@ form > div {
     justify-content: center ;
 }
 input {
-    margin: 1em;
-    padding: 0.7em;
+    margin: 1em !important;
+    padding: 0.7em !important;
     background-color: $secondaryColor;
 
     ::placeholder {
-        color: $offColor;
+        color: $offColor !important;
     }
 }
 /* FOOTER */
 footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
     background-color: $secondaryColor;
     color: $offColor;
 }
@@ -337,4 +299,47 @@ footer {
     input {
         width: 50%;
     }
+}
+
+
+
+// hover animations
+.hvr-sweep-to-top {
+    display: flex;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+.hvr-sweep-to-top:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #2098D1;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+transition-timing-function: ease-out;
+}
+.hvr-sweep-to-top:hover, .hvr-sweep-to-top:focus, .hvr-sweep-to-top:active {
+    color: white;
+}
+.hvr-sweep-to-top:hover:before, .hvr-sweep-to-top:focus:before, .hvr-sweep-to-top:active:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
 }
