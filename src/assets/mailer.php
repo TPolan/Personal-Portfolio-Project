@@ -1,5 +1,6 @@
 <?php
 
+if($_POST) {
 
     // The message
     $message = $_POST['message'];
@@ -13,3 +14,4 @@
     
     header("Location: /");
     exit();
+}
